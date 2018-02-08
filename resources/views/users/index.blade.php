@@ -5,8 +5,10 @@
 		<h1>Bievenido al Menu Principal</h1>
 		<h2>CRUD de Usuarios</h2>
 		@if(session()->has('info'))
-
-
+			<div class="alert alert-success">
+				<button class="close" data-dismiss="alert"><span>&times;</span></button>
+				<strong>Aviso! </strong>{{ session('info') }}
+			</div>
 		@endif
 		<hr>
 		<a href="{{ route('users.create') }}" class="btn btn-primary btn-lg">Crear Usuario</a>
