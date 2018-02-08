@@ -5,11 +5,8 @@
 		<h1>Bievenido al Menu Principal</h1>
 		<h2>CRUD de Usuarios</h2>
 		@if(session()->has('info'))
-			<div class="panel panel-success">
-				<div class="panel-body">
-					{{ session('info') }}
-				</div>
-			</div>
+
+
 		@endif
 		<hr>
 		<a href="{{ route('users.create') }}" class="btn btn-primary btn-lg">Crear Usuario</a>
